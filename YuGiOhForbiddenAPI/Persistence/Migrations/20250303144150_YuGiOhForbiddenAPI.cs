@@ -17,12 +17,12 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Cost = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Atk = table.Column<int>(type: "int", nullable: false),
-                    Def = table.Column<int>(type: "int", nullable: false)
+                    Atk = table.Column<int>(type: "int", nullable: true),
+                    Def = table.Column<int>(type: "int", nullable: true),
+                    Type = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false)
                 },
                 constraints: table =>
                 {

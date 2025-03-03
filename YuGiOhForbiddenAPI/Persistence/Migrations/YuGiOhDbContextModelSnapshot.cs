@@ -29,13 +29,13 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Atk")
+                    b.Property<int?>("Atk")
                         .HasColumnType("int");
 
                     b.Property<int>("Cost")
                         .HasColumnType("int");
 
-                    b.Property<int>("Def")
+                    b.Property<int?>("Def")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -48,11 +48,38 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Card");
+
+                    b.HasDiscriminator<string>("Type").HasValue("Card");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("YuGiOhForbiddenAPI.Entities.Equip", b =>
+                {
+                    b.HasBaseType("YuGiOhForbiddenAPI.Model.Card");
+
+                    b.HasDiscriminator().HasValue("Equip");
+                });
+
+            modelBuilder.Entity("YuGiOhForbiddenAPI.Entities.Monster", b =>
+                {
+                    b.HasBaseType("YuGiOhForbiddenAPI.Model.Card");
+
+                    b.HasDiscriminator().HasValue("Monster");
+                });
+
+            modelBuilder.Entity("YuGiOhForbiddenAPI.Entities.Trap", b =>
+                {
+                    b.HasBaseType("YuGiOhForbiddenAPI.Model.Card");
+
+                    b.HasDiscriminator().HasValue("Trap");
                 });
 #pragma warning restore 612, 618
         }
