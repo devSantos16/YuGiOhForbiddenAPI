@@ -7,6 +7,9 @@ namespace YuGiOhForbiddenAPI.Persistence
     public class YuGiOhDbContext : DbContext
     {
         public DbSet<Card> Card { get; set; }
+        public DbSet<Monster> Monster { get; set; }
+        public DbSet<Trap> Trap { get; set; }
+        public DbSet<Equip> Equip { get; set; }
 
         public YuGiOhDbContext(DbContextOptions<YuGiOhDbContext> options) : base(options)
         {

@@ -4,18 +4,10 @@ namespace YuGiOhForbiddenAPI.Entities
 {
     public class Monster : Card
     {
-        private int? _atk;
-        public override int? Atk 
-        {
-            get 
-            {
-                return this._atk;
-            }
-
-            protected set
-            {
-                this._atk = value ?? 0;
-            } 
-        }
+        public int Attack { get; set; }
+        public int Defense { get; set; }
+        public int Level { get; set; }
+        public string Attribute { get; set; }
+        public string MonsterType { get; set; }
     }
 }

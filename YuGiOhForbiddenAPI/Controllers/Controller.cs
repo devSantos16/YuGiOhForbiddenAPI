@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using YuGiOhForbiddenAPI.Entities;
+using YuGiOhForbiddenAPI.Model;
 using YuGiOhForbiddenAPI.Persistence;
 
 namespace YuGiOhForbiddenAPI.Controllers
@@ -12,6 +14,6 @@ namespace YuGiOhForbiddenAPI.Controllers
         public Controller(YuGiOhDbContext context)
         {
             this._context = context;
-        }
+        } 
     }
 }

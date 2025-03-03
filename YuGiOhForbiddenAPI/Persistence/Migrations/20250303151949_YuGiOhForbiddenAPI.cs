@@ -20,9 +20,12 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Cost = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Atk = table.Column<int>(type: "int", nullable: true),
-                    Def = table.Column<int>(type: "int", nullable: true),
-                    Type = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false)
+                    Type = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
+                    Attack = table.Column<int>(type: "int", nullable: true),
+                    Defense = table.Column<int>(type: "int", nullable: true),
+                    Level = table.Column<int>(type: "int", nullable: true),
+                    Attribute = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MonsterType = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -29,13 +29,7 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("Atk")
-                        .HasColumnType("int");
-
                     b.Property<int>("Cost")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Def")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -71,6 +65,21 @@ namespace YuGiOhForbiddenAPI.Persistence.Migrations
             modelBuilder.Entity("YuGiOhForbiddenAPI.Entities.Monster", b =>
                 {
                     b.HasBaseType("YuGiOhForbiddenAPI.Model.Card");
+
+                    b.Property<int>("Attack")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Attribute")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Defense")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MonsterType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Monster");
                 });
