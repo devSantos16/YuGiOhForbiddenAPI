@@ -5,10 +5,7 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuGiOhForbiddenAPI", "YuGiOhForbiddenAPI\YuGiOhForbiddenAPI.csproj", "{8E530E66-B60E-46A8-907F-D2229BBEC423}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{5B07E9ED-C783-4879-B762-17D1731D237D}"
-	ProjectSection(SolutionItems) = preProject
-		cards.yaml = cards.yaml
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCards", "GenerateCards\GenerateCards.csproj", "{3257E6DC-7366-44C0-844B-3DA9E6B519DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +17,10 @@ Global
 		{8E530E66-B60E-46A8-907F-D2229BBEC423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E530E66-B60E-46A8-907F-D2229BBEC423}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E530E66-B60E-46A8-907F-D2229BBEC423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3257E6DC-7366-44C0-844B-3DA9E6B519DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3257E6DC-7366-44C0-844B-3DA9E6B519DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3257E6DC-7366-44C0-844B-3DA9E6B519DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3257E6DC-7366-44C0-844B-3DA9E6B519DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

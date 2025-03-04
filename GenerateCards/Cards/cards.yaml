@@ -1,0 +1,100 @@
+cards:
+  - Id: 1
+    Name: "Blue-Eyes White Dragon"
+    Password: "89631139"
+    Cost: 999999
+    Description: "A legendary dragon with immense power."
+    Type: "Monster"
+    Attack: 3000
+    Defense: 2500
+    Level: 8
+    Attribute: "Light"
+    MonsterType: "Dragon"
+
+  - Id: 2
+    Name: "Dark Magician"
+    Password: "46986414"
+    Cost: 999999
+    Description: "The ultimate wizard in terms of attack and defense."
+    Type: "Monster"
+    Attack: 2500
+    Defense: 2100
+    Level: 7
+    Attribute: "Dark"
+    MonsterType: "Spellcaster"
+
+  - Id: 3
+    Name: "Red-Eyes Black Dragon"
+    Password: "74677422"
+    Cost: 999999
+    Description: "A ferocious dragon with a deadly attack."
+    Type: "Monster"
+    Attack: 2400
+    Defense: 2000
+    Level: 7
+    Attribute: "Dark"
+    MonsterType: "Dragon"
+
+  - Id: 4
+    Name: "Summoned Skull"
+    Password: "70781052"
+    Cost: 999999
+    Description: "A fiend with dark powers for confusing the enemy."
+    Type: "Monster"
+    Attack: 2500
+    Defense: 1200
+    Level: 6
+    Attribute: "Dark"
+    MonsterType: "Fiend"
+
+  - Id: 5
+    Name: "Monster Reborn"
+    Password: "83764718"
+    Cost: 999999
+    Description: "Revives a monster from either player's graveyard."
+    Type: "Magic"
+
+  - Id: 6
+    Name: "Raigeki"
+    Password: "12580477"
+    Cost: 999999
+    Description: "Destroys all monsters on your opponent's field."
+    Type: "Magic"
+
+  - Id: 7
+    Name: "Trap Hole"
+    Password: "04206964"
+    Cost: 999999
+    Description: "Destroys an opponent's monster with 1000 or more ATK."
+    Type: "Trap"
+
+  - Id: 8
+    Name: "Polymerization"
+    Password: "24094653"
+    Cost: 999999
+    Description: "Fuses two or more monsters to form a new monster."
+    Type: "Magic"
+
+  - Id: 9
+    Name: "Curse of Dragon"
+    Password: "28279543"
+    Cost: 999999
+    Description: "A wicked dragon that taps into dark forces."
+    Type: "Monster"
+    Attack: 2000
+    Defense: 1500
+    Level: 5
+    Attribute: "Dark"
+    MonsterType: "Dragon"
+
+  - Id: 10
+    Name: "Gaia The Fierce Knight"
+    Password: "06368038"
+    Cost: 999999
+    Description: "A knight whose horse travels faster than the wind."
+    Type: "Monster"
+    Attack: 2300
+    Defense: 2100
+    Level: 7
+    Attribute: "Earth"
+    MonsterType: "Warrior"

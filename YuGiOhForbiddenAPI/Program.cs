@@ -9,7 +9,7 @@ namespace YuGiOhForbiddenAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var connectionString = builder.Configuration.GetConnectionString("YuGiOhForbiddenAPI");
+            var connectionString = YuGiOhDbContext.ConnectionString;
 
             // Add services to the container.
             builder.Services.AddDbContext<YuGiOhDbContext>(sql => sql.UseSqlServer(connectionString));
