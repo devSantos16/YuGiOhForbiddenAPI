@@ -39,7 +39,7 @@ namespace YuGiOhForbiddenAPI.Persistence
 
         }
 
-        public static DbContextOptions<YuGiOhDbContext> GetDbContext()
+        public static DbContextOptions<YuGiOhDbContext> GetDbContextOptions()
         {
             return new DbContextOptionsBuilder<YuGiOhDbContext>()
                 .UseSqlServer(ConnectionString)

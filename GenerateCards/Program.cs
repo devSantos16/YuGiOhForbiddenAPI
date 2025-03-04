@@ -32,7 +32,7 @@ internal class Program
             .Build();
 
         var cardCollection = deserializer.Deserialize<CardCollection>(yamlContent);
-        DbContextOptions<YuGiOhDbContext> options = YuGiOhDbContext.GetDbContext();
+        DbContextOptions<YuGiOhDbContext> options = YuGiOhDbContext.GetDbContextOptions();
 
         using (var context = new YuGiOhDbContext(options))
         {
